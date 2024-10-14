@@ -3,12 +3,9 @@
 A brief description of your project, what it does, and its purpose.
 
 ## Table of Contents
-- [Recompile and Run](recompile-and-run)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-- [Contact](#contact)
+- [Recompile](recompile)
+- [Run the Application](#run-the-application)
+- [Test the Application](#test-the-application)
 
 ## Recompile
 1. Clone the repository:
@@ -30,12 +27,9 @@ A brief description of your project, what it does, and its purpose.
    * Press Ok
 
 ## Run the application
-1. Run the application via MS Visual Studio
-   * In the 'Solutions Explorer', right click on 'ToyRobot'.
-   * Select Properties.
-   * In Common Properties > Project Dependencies, from the dropdown options for 'Single Startup Project', select ToyRobotApp.
-   * Press Ok
+1. Locate the .exe file. The path should be (Path)\x64\Debug\ToyRobotApp.exe
+2. Double click on the ToyRobotApp.exe file.
 
-2. Press F5.
+
    
 
