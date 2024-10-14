@@ -1,4 +1,4 @@
-Toy Robot in C++
+## Toy Robot in C++
 
 The Toy Robot Simulation is a console application that simulates the movement of a toy robot on a square tabletop with dimensions of 5 units x 5 units. The robot is allowed to roam freely on the table's surface but must be prevented from falling off the edge. The application processes commands to control the robot's placement and movement.
 
