@@ -1,0 +1,99 @@
+#-- OTHER COMMANDS BEFORE PLACE --#
+
+#Test for MOVE before PLACE
+MOVE
+
+#Test for LEFT before PLACE
+LEFT
+
+#Test for RIGHT before PLACE
+RIGHT
+
+#Test for REPORT before PLACE
+REPORT
+
+#--- INVALID INPUT---#
+
+#Empty
+
+
+#Invalid command
+TEST 1,0,SOUTH
+
+#More than 2 words
+PLACE 1,2,NORTH LEFT
+
+#Non-digit X Position
+PLACE x,1,NORTH
+
+#Non-digit Y Position
+PLACE 1,y,NORTH
+
+#Invalid direction
+PLACE 1,2,f
+
+
+#--- PLACE ---#
+
+#Test for a valid PLACE command
+PLACE 1,1,NORTH
+
+#Test for PLACE in invalid x position
+PLACE 7,1,NORTH
+
+#Test for PLACE in invalid y position
+PLACE 5,-2,NORTH
+
+#--- MOVE ---#
+
+#Test for a valid MOVE command
+PLACE 4,3,EAST
+MOVE
+
+#Test for MOVE out of bounds
+PLACE 0,1,WEST
+MOVE
+
+#Test for MOVE with input position
+PLACE 0,1,WEST
+MOVE 1,1,NORTH
+
+#--- LEFT ---#
+
+#Test for a valid LEFT command
+PLACE 3,3,EAST
+LEFT
+
+#Test for LEFT with input position
+PLACE 2,1,SOUTH
+LEFT 1,1,NORTH
+
+#--- RIGHT ---#
+
+#Test for a valid RIGHT command
+PLACE 3,3,WEST
+RIGHT
+
+#Test for RIGHT with input position
+PLACE 2,1,SOUTH
+RIGHT 1,1,NORTH
+
+#--- REPORT ---#
+
+#Test for a valid REPORT command
+PLACE 3,3,SOUTH
+REPORT
+
+#Test for REPORT with input position
+PLACE 2,1,SOUTH
+REPORT 1,1,NORTH
+
+
+
+
+
+
+
+
+
+
