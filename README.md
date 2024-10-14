@@ -56,7 +56,7 @@ The application accepts the following commands:
 ## Developer Notes
 - [Recompile](recompile)
 - [Run the Application](#run-the-application)
-- [Automated Testing](#test-the-application)
+- [Runnable Unit Testing](#runnable-unit-testing)
 - [Test the Application](#test-the-application)
 
 ## Recompile
@@ -83,7 +83,7 @@ The application accepts the following commands:
 2. Double click on the ToyRobotApp.exe file.
 3. Click on 'X' icon to close the application.
 
-## Automated Testing
+## Runnable Unit Testing
    * Open MS Visual Studio open the project
    * In the toolbar, select Test > Test Explorer
    * Press Ctrl + R,V
