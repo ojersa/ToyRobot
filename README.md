@@ -32,8 +32,7 @@ A brief description of your project, what it does, and its purpose.
 2. Double click on the ToyRobotApp.exe file.
 
 ## Test the application
-1. Run the application using the executable file
-   * [Run .exe](#run-the-application)
+   * [Run the executable file](#run-the-application)
    * Find the test data here: (Path)\ToyRobotApp\TestData.txt
 
 ## Automated Testing
