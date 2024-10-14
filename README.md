@@ -31,7 +31,7 @@ The application accepts the following commands:
 - **REPORT**: 
   - Outputs the robot's current position and facing direction.
 
-## Table of Contents
+## Developer Notes
 - [Recompile](recompile)
 - [Run the Application](#run-the-application)
 - [Test the Application](#test-the-application)
