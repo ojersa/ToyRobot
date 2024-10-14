@@ -34,8 +34,8 @@ The application accepts the following commands:
 ## Developer Notes
 - [Recompile](recompile)
 - [Run the Application](#run-the-application)
-- [Test the Application](#test-the-application)
 - [Automated Testing](#test-the-application)
+- [Test the Application](#test-the-application)
 
 ## Recompile
 1. Clone the repository:
@@ -60,14 +60,293 @@ The application accepts the following commands:
 1. Locate the .exe file. The path should be (Path)\x64\Debug\ToyRobotApp.exe
 2. Double click on the ToyRobotApp.exe file.
 
-## Test the application
-   * [Run the executable file](#run-the-application)
-   * Find the test data here: (Path)\ToyRobotApp\TestData.txt
-
 ## Automated Testing
    * Open MS Visual Studio open the project
    * In the toolbar, select Test > Test Explorer
    * Press Ctrl + R,V
+
+## Test the application
+   * [Run the executable file](#run-the-application)
+   * Here are some sample test scenarios you can use to validate the application:
+
+     ### Test Scenario Group 1: PLACE first
+- The following scenarios show that other commands will be ignored if PLACE is not yet called
+
+    **Input Commands:**
+    ```cmd
+    MOVE
+    ```
+
+    **Expected Output:**
+    ```cmd
+    ```
+
+    **Input Commands:**
+    ```cmd
+    LEFT
+    ```
+
+    **Expected Output:**
+    ```cmd
+    ```
+
+    **Input Commands:**
+    ```cmd
+    RIGHT
+    ```
+
+    **Expected Output:**
+    ```cmd
+    ```
+    **Input Commands:**
+    ```cmd
+    REPORT
+    ```
+
+    **Expected Output:**
+    ```cmd
+    ```
+
+    **Input Commands:**
+    ```cmd
+    PLACE 1,2,NORTH
+    REPORT
+    ```
+
+    **Expected Output:**
+    ```cmd
+    Output: 1,2,NORTH
+    ```
+
+### Test Scenario Group 2: Incorrect input
+- The following scenarios show that commands will be ignored if input is invalid
+
+
+    Input Commands (empty input)
+    ```cmd
+           
+    ```
+
+    **Expected Output:**
+    ```cmd
+    ```
+
+
+    **Input Commands (invalid command):**
+    ```cmd
+    PLACE 2,2,EAST
+    TEST 1,0,SOUTH
+    REPORT
+    ```
+
+    **Expected Output:**
+    ```cmd
+    Output: 2,2,EAST
+    ```
+
+    **Input Commands (more than 2 input strings):**
+    ```cmd
+    PLACE 1,1,SOUTH
+    PLACE 1,0,SOUTH LEFT
+    REPORT
+    ```
+
+    **Expected Output:**
+    ```cmd
+    Output: 1,1,SOUTH
+    ```
+
+    **Input Commands (invalid x position):**
+    ```cmd
+    PLACE 1,3,NORTH
+    PLACE x,2,NORTH
+    REPORT
+    ```
+
+    **Expected Output:**
+    ```cmd
+    Output: 1,3,NORTH
+    ```
+
+    **Input Commands (invalid y position):**
+    ```cmd
+    PLACE 3,2,WEST
+    PLACE 3,y,NORTH
+    REPORT
+    ```
+
+    **Expected Output:**
+    ```cmd
+    Output: 3,2,WEST
+    ```
+
+    **Input Commands (invalid direction):**
+    ```cmd
+    PLACE 3,2,NORTH
+    PLACE 1,2,f
+    REPORT
+    ```
+
+    **Expected Output:**
+    ```cmd
+    Output: 3,2,NORTH
+    ```
+
+### Test Scenario Group 3:
+- positive and negative tests for PLACE command
+
+    **Input Commands:**
+    ```cmd
+    PLACE 1,0,NORTH
+    REPORT
+    ```
+
+    **Expected Output:**
+    ```cmd
+    Output: 1,0,NORTH
+    ```
+    
+    **Input Commands (x position is out of bounds):**
+    ```cmd
+    PLACE 0,3,NORTH
+    PLACE 7,1,NORTH
+    REPORT
+    ```
+
+    **Expected Output:**
+    ```cmd
+    Output: 0,3,NORTH
+    ```
+    
+    **Input Commands (x position is out of bounds):**
+    ```cmd
+    PLACE 2,2,SOUTH
+    PLACE 5,-2,NORTH
+    REPORT
+    ```
+
+    **Expected Output:**
+    ```cmd
+    Output: 2,2,SOUTH
+    ```
+
+### Test Scenario Group 4:
+- positive and negative tests for MOVE command
+
+    **Input Commands:**
+    ```cmd
+    PLACE 4,3,EAST
+    MOVE
+    REPORT
+    ```
+    
+    **Expected Output:**
+    ```cmd
+    Output: 5,3,EAST
+    ```
+    
+    **Input Commands (out of bounds):**
+    ```cmd
+    PLACE 0,1,WEST
+    MOVE
+    REPORT
+    ```
+    
+    **Expected Output:**
+    ```cmd
+    Output: 0,1,WEST
+    ```
+    
+    **Input Commands (with position):**
+    ```cmd
+    PLACE 2,1,WEST 
+    MOVE 1,1,WEST
+    REPORT
+    ```
+    
+    **Expected Output:**
+    ```cmd
+    Output: 2,1,WEST 
+    ```
+
+### Test Scenario Group 5:
+- positive and negative tests for LEFT command
+
+    **Input Commands:**
+    ```cmd
+    PLACE 3,3,EAST
+    LEFT
+    REPORT
+    ```
+    
+    **Expected Output:**
+    ```cmd
+    Output: 3,3,NORTH
+    ```
+    
+    **Input Commands (with position):**
+    ```cmd
+    PLACE 2,1,SOUTH 
+    LEFT 2,1,EAST
+    REPORT
+    ```
+    
+    **Expected Output:**
+    ```cmd
+    Output: 2,1,SOUTH  
+    ```
+
+### Test Scenario Group 6:
+- positive and negative tests for RIGHT command
+
+    **Input Commands:**
+    ```cmd
+    PLACE 3,3,EAST
+    RIGHT
+    REPORT
+    ```
+    
+    **Expected Output:**
+    ```cmd
+    Output: 3,3,SOUTH
+    ```
+    
+    **Input Commands (with position):**
+    ```cmd
+    PLACE 2,1,SOUTH 
+    RIGHT 2,1,WEST
+    REPORT
+    ```
+    
+    **Expected Output:**
+    ```cmd
+    Output: 2,1,SOUTH  
+    ```
+
+
+### Test Scenario Group 7:
+- positive and negative tests for REPORT command
+
+    **Input Commands:**
+    ```cmd
+    PLACE 3,3,SOUTH
+    REPORT
+    ```
+    
+    **Expected Output:**
+    ```cmd
+    Output: 3,3,SOUTH
+    ```
+    
+    **Input Commands (with position):**
+    ```cmd
+    PLACE 2,1,SOUTH
+    REPORT 2,1,SOUTH
+    ```
+    
+    **Expected Output:**
+    ```cmd
+    ```
 
 
 
