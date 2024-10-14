@@ -66,7 +66,7 @@ The application accepts the following commands:
    * In the 'Repository Location', put the location:
        https://github.com/ojersa/ToyRobot.git
    * Change 'Path' based on your preference
-   * Press Clone
+   * Select 'Clone'
 
 2. Compile
    * In the toolbar, select Build > Clean Solution
@@ -75,12 +75,13 @@ The application accepts the following commands:
 3. Set-up the startup project
    * In the 'Solutions Explorer', right click on 'ToyRobot'.
    * Select Properties.
-   * In Common Properties > Project Dependencies, from the dropdown options for 'Single Startup Project', select ToyRobotApp.
-   * Press Ok
+   * In Common Properties > Project Dependencies,select ToyRobotApp in the dropdown options for 'Single Startup Project'.
+   * Select 'Ok'
 
 ## Run the application
 1. Locate the .exe file. The path should be (Path)\x64\Debug\ToyRobotApp.exe
 2. Double click on the ToyRobotApp.exe file.
+3. Click on 'X' icon to close the application.
 
 ## Automated Testing
    * Open MS Visual Studio open the project
