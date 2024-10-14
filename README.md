@@ -10,10 +10,7 @@ A brief description of your project, what it does, and its purpose.
 - [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
 
-## Recompile and Run
-
-Follow these steps to install and set up the project:
-
+## Recompile
 1. Clone the repository:
    * Open MS Visual Studio and Create an empty project
    * In the toolbar, select Git > Clone a repository
@@ -26,9 +23,19 @@ Follow these steps to install and set up the project:
    * In the toolbar, select Git > Clean Solution
    * In the toolbar, select Git > Build Solution
 
-3. Run the application
+3. Set-up the startup project
    * In the 'Solutions Explorer', right click on 'ToyRobot'.
    * Select Properties.
-   * In Common Properties > Project Dependencies, select ToyRobotApp from the dropdown.
+   * In Common Properties > Project Dependencies, from the dropdown options for 'Single Startup Project', select ToyRobotApp.
+   * Press Ok
+
+## Run the application
+1. Run the application via MS Visual Studio
+   * In the 'Solutions Explorer', right click on 'ToyRobot'.
+   * Select Properties.
+   * In Common Properties > Project Dependencies, from the dropdown options for 'Single Startup Project', select ToyRobotApp.
+   * Press Ok
+
+2. Press F5.
    
 
