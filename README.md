@@ -7,7 +7,6 @@ The Toy Robot Simulation is a console application that simulates the movement of
 - Simulates a toy robot on a 5x5 unit table.
 - Accepts commands to control the robot's position and orientation.
 - Prevents the robot from falling off the table during movement.
-- Commands are processed in sequence, with a focus on validating initial placement.
 
 ## Commands
 
