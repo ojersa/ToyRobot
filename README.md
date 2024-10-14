@@ -30,7 +30,7 @@ The application accepts the following commands:
 - **REPORT**: 
   - Outputs the robot's current position and facing direction.
 
-- ** EXAMPLE INPOUT AND OUTPUT ***
+- **EXAMPLE INPOUT AND OUTPUT**: 
   - Example Input and Output:
   - a)----------------
   - PLACE 0,0,NORTH
