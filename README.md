@@ -16,7 +16,7 @@ Follow these steps to install and set up the project:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ojera/ToyRobot
+   git clone https://github.com/ojersa/ToyRobot
 
 2. Navigate to the project directory:
    ```bash
