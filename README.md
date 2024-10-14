@@ -30,6 +30,12 @@ A brief description of your project, what it does, and its purpose.
 1. Locate the .exe file. The path should be (Path)\x64\Debug\ToyRobotApp.exe
 2. Double click on the ToyRobotApp.exe file.
 
+## Test the application
+1. Run the application using the executable file
+   * [Run .exe](#run-the-application)
+   * 
+
+
 
    
 
