@@ -15,8 +15,11 @@ A brief description of your project, what it does, and its purpose.
 Follow these steps to install and set up the project:
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/ojersa/ToyRobot
+   * Open MS Visual Studio and Create an empty project
+   * In the toolbar, select Git > Clone a repository
+   * In the 'Repository Location', put the location:
+     
+   * Change 'Path' based on your preference
 
 2. Navigate to the project directory:
    ```bash
