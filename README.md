@@ -6,6 +6,7 @@ A brief description of your project, what it does, and its purpose.
 - [Recompile](recompile)
 - [Run the Application](#run-the-application)
 - [Test the Application](#test-the-application)
+- [Automated Testing](#test-the-application)
 
 ## Recompile
 1. Clone the repository:
@@ -17,8 +18,8 @@ A brief description of your project, what it does, and its purpose.
    * Press Clone
 
 2. Compile
-   * In the toolbar, select Git > Clean Solution
-   * In the toolbar, select Git > Build Solution
+   * In the toolbar, select Build > Clean Solution
+   * In the toolbar, select Build > Build Solution
 
 3. Set-up the startup project
    * In the 'Solutions Explorer', right click on 'ToyRobot'.
@@ -33,7 +34,12 @@ A brief description of your project, what it does, and its purpose.
 ## Test the application
 1. Run the application using the executable file
    * [Run .exe](#run-the-application)
-   * 
+   * Find the test data here: (Path)\ToyRobotApp\TestData.txt
+
+## Automated Testing
+   * Open MS Visual Studio open the project
+   * In the toolbar, select Test > Test Explorer
+   * Press Ctrl + R,V
 
 
 
